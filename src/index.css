@@ -1,13 +1,362 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --shadow-ui-1: 0 3px 13px -1px rgba(0, 0, 0, 0.4);
+  --shadow-ui-2: 0 -3px 13px -1px rgba(0, 0, 0, 0.4);
+  --shadow-ui-3: 0px 3px 9px 0px rgba(0, 0, 0, 0.2);
+
+  /* ====== PADDING VARIABLES ====== */
+  --spacer: 0.75rem; /* main spacer is 12px */
+  --gutter-size-1: calc(var(--spacer) * 1); /* 12px */
+  --gutter-size-2: calc(var(--spacer) * 2); /* 24px */
+  --gutter-size-3: calc(var(--spacer) * 2.5); /* 30px */
+  --gutter-size-4: calc(var(--spacer) * 3.75); /* 45px */
+  --gutter-size-5: calc(var(--spacer) * 5); /* 60px */
+  --gutter-size-6: calc(var(--spacer) * 7.5); /* 90px */
+
+  --gutter-width: var(--gutter-size-3);
+  --gutter-width-half: calc(var(--spacer) * 1.25);
+  /* border radius values */
+  --border-radius-1: 3px;
+  --border-radius-2: 5px;
+  --border-radius-3: 10px;
+  --border-radius-3: 16px;
+  --border-radius-4: 20px;
+  --site-width: calc(var(--spacer) * 105);
+  --site-width-half: calc(var(--spacer) * 50);
+
+  /* site width is 1200px = with added 2X gutter-size-3 */
+  /* PALETTES */
+  --palette-01: #606c38;
+  --palette-02: #93a655;
+  --palette-03: #fffef4;
+  --palette-04: #fefae0;
+  --palette-05: #dda15e;
+  --palette-06: #bc6c25;
+  --palette-07: #2c3618;
+  --palette-08: #1f2419;
+  --palette-09: #000;
+  --palette-10: #fff;
+  --palette-11: #646860;
+  --palette-12: #b6b9b1;
+  --palette-13: #eaede6;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  margin: 0 0 1.125em 0;
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: "Varela Round", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./assets/images/website-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizespeed;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+/* ====== PADDING VARIABLES ====== */
+.guttercontentwidth_textnarrow,
+.gcwpadding,
+.guttercontentwidth,
+.guttercontentwidthhalf,
+.pt-1,
+.pr-1,
+.pb-1,
+.pl-1,
+.pt-2,
+.pr-2,
+.pb-2,
+.pl-2,
+.pt-3,
+.pr-3,
+.pb-3,
+.pl-3,
+.pt-4,
+.pr-4,
+.pb-4,
+.pl-4,
+.pt-5,
+.pr-5,
+.pb-5,
+.pl-5,
+.pt-6,
+.pr-6,
+.pb-6,
+.pl-6 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* === PADDINGS === */
+.pt-1 {
+  padding-top: var(--gutter-size-1);
+}
+
+.pr-1 {
+  padding-right: var(--gutter-size-1);
+}
+
+.pb-1 {
+  padding-bottom: var(--gutter-size-1);
+}
+
+.pl-1 {
+  padding-left: var(--gutter-size-1);
+}
+
+.pt-2 {
+  padding-top: var(--gutter-size-2);
+}
+
+.pr-2 {
+  padding-right: var(--gutter-size-2);
+}
+
+.pb-2 {
+  padding-bottom: var(--gutter-size-2);
+}
+
+.pl-2 {
+  padding-left: var(--gutter-size-2);
+}
+
+.pt-3 {
+  padding-top: var(--gutter-size-3);
+}
+
+.pr-3 {
+  padding-right: var(--gutter-size-3);
+}
+
+.pb-3 {
+  padding-bottom: var(--gutter-size-3);
+}
+
+.pl-3 {
+  padding-left: var(--gutter-size-3);
+}
+
+.pt-4 {
+  padding-top: var(--gutter-size-4);
+}
+
+.pr-4 {
+  padding-right: var(--gutter-size-4);
+}
+
+.pb-4 {
+  padding-bottom: var(--gutter-size-4);
+}
+
+.pl-4 {
+  padding-left: var(--gutter-size-4);
+}
+
+.pt-5 {
+  padding-top: var(--gutter-size-5);
+}
+
+.pr-5 {
+  padding-right: var(--gutter-size-5);
+}
+
+.pb-5 {
+  padding-bottom: var(--gutter-size-5);
+}
+
+.pl-5 {
+  padding-left: var(--gutter-size-5);
+}
+
+.pt-6 {
+  padding-top: var(--gutter-size-6);
+}
+
+.pr-6 {
+  padding-right: var(--gutter-size-6);
+}
+
+.pb-6 {
+  padding-bottom: var(--gutter-size-6);
+}
+
+.pl-6 {
+  padding-left: var(--gutter-size-6);
+}
+
+/* === MARGINS === */
+.mt-1 {
+  margin-top: var(--gutter-size-1);
+}
+
+.mr-1 {
+  margin-right: var(--gutter-size-1);
+}
+
+.mb-1 {
+  margin-bottom: var(--gutter-size-1);
+}
+
+.ml-1 {
+  margin-left: var(--gutter-size-1);
+}
+
+.mt-2 {
+  margin-top: var(--gutter-size-2);
+}
+
+.mr-2 {
+  margin-right: var(--gutter-size-2);
+}
+
+.mb-2 {
+  margin-bottom: var(--gutter-size-2);
+}
+
+.ml-2 {
+  margin-left: var(--gutter-size-2);
+}
+
+.mt-3 {
+  margin-top: var(--gutter-size-3);
+}
+
+.mr-3 {
+  margin-right: var(--gutter-size-3);
+}
+
+.mb-3 {
+  margin-bottom: var(--gutter-size-3);
+}
+
+.ml-3 {
+  margin-left: var(--gutter-size-3);
+}
+
+.mt-4 {
+  margin-top: var(--gutter-size-4);
+}
+
+.mr-4 {
+  margin-right: var(--gutter-size-4);
+}
+
+.mb-4 {
+  margin-bottom: var(--gutter-size-4);
+}
+
+.ml-4 {
+  margin-left: var(--gutter-size-4);
+}
+
+.mt-5 {
+  margin-top: var(--gutter-size-5);
+}
+
+.mr-5 {
+  margin-right: var(--gutter-size-5);
+}
+
+.mb-5 {
+  margin-bottom: var(--gutter-size-5);
+}
+
+.ml-5 {
+  margin-left: var(--gutter-size-5);
+}
+
+.mt-6 {
+  margin-top: var(--gutter-size-6);
+}
+
+.mr-6 {
+  margin-right: var(--gutter-size-6);
+}
+
+.mb-6 {
+  margin-bottom: var(--gutter-size-6);
+}
+
+.ml-6 {
+  margin-left: var(--gutter-size-6);
+}
+.contentwidthhalf,
+.contentwidthnopadding,
+.contentwidth {
+  width: 100%;
+  max-width: var(--site-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.contentwidthnopadding {
+  max-width: calc(var(--spacer) * 100);
+}
+.contentwidthhalf {
+  max-width: calc(var(--site-width) / 2);
+}
+.guttermargin {
+  /* actial size gutter is 30px */
+  margin-left: var(--gutter-width);
+  margin-right: var(--gutter-width);
+}
+.guttercontentwidth {
+  /* actial size gutter is 30px */
+  padding-left: var(--gutter-width);
+  padding-right: var(--gutter-width);
+}
+.guttermarginhalf {
+  margin-left: var(--gutter-width-half);
+  margin-right: var(--gutter-width-half);
+}
+.guttercontentwidthhalf {
+  padding-left: var(--gutter-width-half);
+  padding-right: var(--gutter-width-half);
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.ta-center {
+  text-align: center;
+}
+.heading-font {
+  font-family: "Young Serif", serif;
+}
+.heading-xxxl {
+  font-size: 2.625em;
+}
+.heading-xxl {
+  font-size: 2.375em;
+}
+.heading-xl {
+  font-size: 2.25em;
+}
+.heading-lg {
+  font-size: 1.5em;
+}
+.heading-md {
+  font-size: 1.125em;
+}
+.heading-sm {
+  font-size: 0.9375em;
+}
+.heading-xsm {
+  font-size: 0.8125em;
 }

@@ -1,0 +1,49 @@
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  transition: all 120ms;
+  outline: 0;
+  outline: none;
+  border: 2px solid var(--palette-06);
+  color: var(--palette-08);
+  background-color: var(--palette-10);
+  -webkit-border-radius: var(--border-radius-2);
+  border-radius: var(--border-radius-2);
+  padding: 0.5em 0.75em;
+  line-height: 1.5;
+  transition: all 120ms;
+  outline: 0;
+  outline: none;
+}
+input[type="password"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+  border-color: var(--palette-05);
+}
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--palette-05);
+  box-shadow: 0 0 0 1px var(--palette-05);
+}
+input[type="password"]:placeholder,
+input[type="tel"]:placeholder,
+input[type="text"]:placeholder,
+input[type="email"]:placeholder,
+input[type="number"]:placeholder,
+textarea::placeholder {
+  font-weight: 500;
+  opacity: 0.55;
+}
