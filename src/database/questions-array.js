@@ -3,9 +3,9 @@ export const questions = [
     question:
       "What type of light conditions are available in your home for your plant?",
     options: [
-      "Bright, direct sunlight",
-      "Indirect or filtered sunlight",
       "Low light or minimal sunlight",
+      "Indirect or filtered sunlight",
+      "Bright, direct sunlight",
     ],
   },
   {
@@ -19,27 +19,19 @@ export const questions = [
   {
     question:
       "Do you or anyone in your household have allergies or sensitivities to pollen?",
-    options: ["No", "Yes"],
+    options: ["Yes", "No"],
   },
   {
     question: "How much space do you have available for your plant?",
     options: [
-      "Large space for a big plant",
-      "Medium-sized space for a moderately-sized plant",
       "Small space for a compact plant",
-    ],
-  },
-  {
-    question: "What is the main purpose of the plant in your home?",
-    options: [
-      "To improve indoor air quality",
-      "As a decorative element",
-      "To grow herbs",
+      "Medium-sized space for a moderately-sized plant",
+      "Large space for a big plant",
     ],
   },
   {
     question: "Are you looking for a fragrant plant?",
-    options: ["Yes, I prefer a fragrant plant", "No, fragrance is not a priority"],
+    options: ["Yes, I prefer a fragrant plant", "No, not a priority"],
   },
   {
     question: "Do you have alkaline tap water?",
@@ -47,7 +39,7 @@ export const questions = [
   },
   {
     question: "Do you have pets in your home?",
-    options: ["No", "Yes"],
+    options: ["Yes", "No"],
   },
 ];
 

@@ -1,4 +1,4 @@
-import "normalize.css";
+import "./assets/css/normalize.css";
 import "./assets/css/index.css";
 import "./assets/css/ui-elements.css";
 import React from "react";
