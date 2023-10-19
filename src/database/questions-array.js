@@ -11,15 +11,15 @@ export const questions = [
   {
     question: "How much time can you commit to plant care on a weekly basis?",
     options: [
-      "I can provide daily care",
-      "A few times a week for watering and maintenance",
       "I prefer low-maintenance plants that require minimal care",
+      "A few times a week for watering and maintenance",
+      "I can provide daily care",
     ],
   },
   {
     question:
       "Do you or anyone in your household have allergies or sensitivities to pollen?",
-    options: ["Yes", "No"],
+    options: ["No", "Yes"],
   },
   {
     question: "How much space do you have available for your plant?",
@@ -34,7 +34,7 @@ export const questions = [
     options: [
       "To improve indoor air quality",
       "As a decorative element",
-      "To grow herbs or other edibles",
+      "To grow herbs",
     ],
   },
   {
@@ -43,10 +43,14 @@ export const questions = [
   },
   {
     question: "Do you have alkaline tap water?",
-    options: ["Yes", "No"],
+    options: ["No", "Yes"],
   },
   {
     question: "Do you have pets in your home?",
-    options: ["Yes", "No"],
+    options: ["No", "Yes"],
   },
 ];
+
+export default {
+  questions,
+};

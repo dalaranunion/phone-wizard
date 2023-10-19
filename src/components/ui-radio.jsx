@@ -13,31 +13,26 @@ class RadioButton extends React.Component {
     // Generate an ID for a component
     this.id = generateId(5);
 
-    if (this.state.hasOwnProperty("name")) console.error("No name supplied");
-    if (!this.state.hasOwnProperty("key")) {
-      this.key = generateId(5);
-    } else this.key = this.props.key;
+    if (!this.state.hasOwnProperty("name")) console.error("No name supplied");
   }
   render() {
     return (
-      <div className="radiobtn-wrap">
-        {this.state.hasOwnProperty("label") ? (
-          <label class="form-label" for={"radio-" + this.id}>
-            {this.state.label}
-          </label>
-        ) : (
-          ""
-        )}
+      <label
+        className="radiobtn-wrap mb-2 border-radius-3 pt-2 pr-2 pb-2 pl-2 noselect"
+        htmlFor={"radio-" + this.id}
+      >
+        {this.state.label}
         <input
-          className="form-radio"
+          className="radioBtn"
           type="radio"
           id={"radio-" + this.id}
           name={this.state.name}
           value={this.state.value}
           disabled={this.state.disable}
+          required={this.state.required}
+          defaultChecked={this.state.preSelected}
         />
-        ;
-      </div>
+      </label>
     );
   }
 }

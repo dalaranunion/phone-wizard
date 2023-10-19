@@ -47,3 +47,26 @@ textarea::placeholder {
   font-weight: 500;
   opacity: 0.55;
 }
+input[type="radio"],
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--palette-01);
+}
+.button-main {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.25em;
+  text-align: center;
+  min-width: 9rem;
+  background-color: var(--palette-05);
+  border: 2px solid var(--palette-06);
+}
+.button-main:hover {
+  background-color: var(--palette-06);
+}
+.button-main:active {
+  background-color: var(--palette-05);
+  border-color: var(--palette-05);
+}
