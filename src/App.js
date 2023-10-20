@@ -893,8 +893,9 @@ function App() {
       light_requirements: answers[0],
       care_level: answers[1],
       cause_alergies: answers[2],
-      space_requirement: answers[3], // large space
+      space_requirement: answers[3],
       fragrant: answers[4],
+
       sensitive_to_alkaline_water: answers[5],
       pet_friendly: answers[6],
     };

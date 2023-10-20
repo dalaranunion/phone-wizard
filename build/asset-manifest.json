@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/phone-wizard/static/css/main.4f79c1dc.css",
+    "main.js": "/phone-wizard/static/js/main.f85be5ad.js",
+    "static/js/787.d723f7e7.chunk.js": "/phone-wizard/static/js/787.d723f7e7.chunk.js",
+    "index.html": "/phone-wizard/index.html",
+    "main.4f79c1dc.css.map": "/phone-wizard/static/css/main.4f79c1dc.css.map",
+    "main.f85be5ad.js.map": "/phone-wizard/static/js/main.f85be5ad.js.map",
+    "787.d723f7e7.chunk.js.map": "/phone-wizard/static/js/787.d723f7e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f79c1dc.css",
+    "static/js/main.f85be5ad.js"
+  ]
+}
