@@ -11,14 +11,16 @@ class ProductCC extends React.Component {
   }
   render() {
     return (
-      <article>
+      <div className="prod-container-wrap">
         <div className="image-container">
           <img className="prod-img" src={this.data.image_url} />
-          <div className="prod-title">
-            {this.data.name} <em>{this.data.scientific_name}</em>
-          </div>
+          <heaher>
+            <h2 className="prod-title">
+              {this.data.name} <em>{this.data.scientific_name}</em>
+            </h2>
+          </heaher>
         </div>
-      </article>
+      </div>
     );
   }
 }
